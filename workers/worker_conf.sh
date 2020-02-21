@@ -3,10 +3,10 @@
 echo 'rjwu:1229' | chpasswd
 echo '1229' | sudo -u rjwu chsh -s /bin/bash
 
-cd ./ssh_scripts
+cd ./ssh_script
 ./ssh_scripts
 
-cd ../hosts_scripts
+cd ../hosts_script
 ./change_hosts.sh
 
 cd ../env_scripts
