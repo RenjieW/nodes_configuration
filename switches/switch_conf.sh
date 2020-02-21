@@ -9,7 +9,7 @@ cd ./ssh_script
 cd ../hosts_script
 ./change_hosts.sh
 
-cd ../env_scripts
+cd ../env_script
 ./ubuntu_python.sh
 
 cd ../ovs_scripts
