@@ -1,0 +1,4 @@
+# timeout configs
+ClientAliveInterval 360
+TCPKeepAlive yes
+ClientAliveCountMax 10
