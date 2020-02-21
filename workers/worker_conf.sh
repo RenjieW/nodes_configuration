@@ -4,7 +4,7 @@ echo 'rjwu:1229' | chpasswd
 echo '1229' | sudo -u rjwu chsh -s /bin/bash
 
 cd ./ssh_script
-./ssh_scripts
+./ssh_config.sh
 
 cd ../hosts_script
 ./change_hosts.sh
