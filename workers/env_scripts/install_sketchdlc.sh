@@ -11,3 +11,5 @@ pip install --user -e .
 
 echo "export KMP_DUPLICATE_LIB_OK=TRUE" >> /users/rjwu/.profile
 source /users/rjwu/.profile
+
+mkdir /mnt/data_trace
