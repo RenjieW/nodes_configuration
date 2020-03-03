@@ -1,7 +1,7 @@
 # Environment configuration
 
 - Set the shell environment as bash in workers and servers. 
-- In your home directory, 
+- In your home directory, depending on whether you need to use SketchDLC or not.
 
 ```
 git clone https://github.com/RenjieW/nodes_configuration
@@ -15,7 +15,7 @@ git clone https://github.com/RenjieW/SketchDLC.git
 - Training scripts are all located in `/your/path/to/nodes_configuration/workers/training_scripts` 
 - Take four machines as an example, usually I set machine 0 to machine 2 as workers and machine 3 as a server. 
 - So you may run worker.sh in workers, server.sh and schedule.sh in the server. Those scripts do not require root privilege.
-- You need to modify `DMLC_PS_ROOT_URI`, `DMLC_NODE_HOST` and etc parameters. For detailed information, you can refer to the official [guideance](https://mxnet.apache.org/api/faq/distributed_training) (the `Manually Launching Jobs` part).  
+- You need to modify `DMLC_PS_ROOT_URI`, `DMLC_NODE_HOST` and etc parameters. For detailed information, you can refer to the official [guidance](https://mxnet.apache.org/api/faq/distributed_training) (the `Manually Launching Jobs` part).  
 - To adjust the training hyper-parameters, you need to modify `COMMAND` in scripts (`model`, `batch-size`).
 
 # Capture packets
