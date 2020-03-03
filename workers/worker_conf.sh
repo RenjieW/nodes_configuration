@@ -12,5 +12,11 @@ cd ../hosts_script
 cd ../env_scripts
 ./ubuntu_core.sh
 ./ubuntu_python.sh
-./sketchdlc_env.sh
-sudo -u rjwu ./install_sketchdlc.sh
+
+read -p 'Package to install: ' Package
+if [ "$Package" = "mxnet" ]; then
+    sudo -u rjwu ./install_mxnet.sh
+else
+    ./sketchdlc_env.sh
+    sudo -u rjwu ./install_sketchdlc.sh
+fi
